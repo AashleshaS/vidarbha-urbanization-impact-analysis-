@@ -49,35 +49,16 @@ To ensure scientific rigor, specific statistical tests were applied to quantify 
   * **Test Used:** Kruskal-Wallis H Test (`scipy.stats.kruskal`).
   * **Purpose:** To evaluate whether localized air pollution concentrations differ significantly depending on the underlying land cover type.
 
-## 🔄 Methodology Flowchart
-
-```mermaid
-graph TD
-    A[Define Area of Interest: Vidarbha] --> B(Acquire Satellite Data)
-    B --> C{Google Earth Engine}
-    C --> D[MODIS: Extract AOD/PM2.5 Proxy]
-    C --> E[Landsat: Calculate LST]
-    C --> F[Landsat/Sentinel: Random Forest LULC Classification]
-    D --> G[Export CSV Data Points]
-    E --> G
-    F --> H[Export GeoTIFF Maps]
-    G --> I{Python / Google Colab}
-    H --> I
-    I --> J[Zonal Analysis by LULC]
-    I --> K[Statistical Correlation: Spearman]
-    I --> L[Significance Testing: Kruskal-Wallis]
-    J --> M[Final Results & Visualizations]
-    K --> M
-    L --> M
-````
+## 🔄 Workflow Steps
+<img width="903" height="447" alt="image" src="https://github.com/user-attachments/assets/91d334f4-ae17-4080-8d98-ffacec45a004" />
 
 ## 🗂️ Quick Links
 
 *(Click the links below to read the detailed documentation for each project phase)*
 
-  * 📂 **`gee_scripts/`** ➔ **[📖 Read the GEE Extraction Documentation](https://www.google.com/search?q=gee_scripts/README.md)**
+  * 📂 **`gee_scripts/`** ➔ **[📖 Read the GEE Extraction Documentation](gee_scripts/README.md)**
     *(Contains the JavaScript codes for extracting LST, AOD, and LULC data)*
-  * 📂 **`notebooks/`** ➔ **[📖 Read the Python Analysis Documentation](https://www.google.com/search?q=notebooks/README.md)**
+  * 📂 **`notebooks/`** ➔ **[📖 Read the Python Analysis Documentation](notebooks/README.md)**
     *(Contains the Jupyter Notebooks for statistical correlation and raster visualization)*
 
 <!-- end list -->
