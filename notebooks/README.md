@@ -2,8 +2,6 @@
 
 This directory contains the Jupyter Notebooks used to analyze the data exported from Google Earth Engine. These notebooks handle all statistical testing, LULC area calculations, and the generation of visual plots.
 
-## 📄 File Descriptions
-
 ### 1. `01_correlation_analysis_lst_pm25_lulc.ipynb`
 **Purpose:** Conducts a multi-year statistical study (2005, 2015, 2025) to identify how urbanization and land cover changes influence surface heat and air pollution.
 
